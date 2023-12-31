@@ -1,0 +1,87 @@
+<!-- src/app/menu-nav-bar/menu-nav-bar.component.html -->
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <title> Anki Web</title>
+  <link rel="stylesheet" href="menu-nav-bar.component.css">
+</head>
+
+<body>
+<div class = "main">
+  <div class ="navbar">
+    <div class="icon">
+      <h2 class ="logo">AnkiWeb</h2>
+      <img src="logo.png" alt="" class="logo">
+    </div>
+    <nav>
+      <div class="auth-buttons">
+        <ul>
+          <li><a class="nav-link" [routerLink]="['/deck']">
+            <button class="Decks-button">Decks</button>
+          </a></li>
+          <li><a class="nav-link" [routerLink]="['/add']">
+            <button class="Add-button">Add</button>
+          </a></li>
+          <li><button class="Search-button" [routerLink]="['/search']" >Search</button></li>
+          <li><a href="/account">
+            <button class="Account-button" [routerLink]="['/account']">Account</button>
+          </a></li>
+          <li><a href="#">
+            <button class="LogOut-button">Log Out</button>
+          </a></li>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="CollectionMedia">
+    <p>Collection: 0.13MB     Media: <10kB</p>
+  </div>
+  <div class="navbar-3">
+    <nav>
+      <div class="Gestion-buttons">
+        <ul>
+          <li><a href="#">
+            <button class="GetShared-button">Get Shared Decks</button>
+          </a></li>
+          <li><a href="#">
+            <button class="SharedItems-button">My Shared Items</button>
+          </a></li>
+          <li><a href="#">
+            <button class="CreateDeck-button">Create Deck</button>
+          </a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class ="navbar-2">
+    <div class="bottom">
+      <nav>
+        <div class="info-button">
+          <ul>
+            <li><a href="#">
+              <button class="Apps-button">Apps</button>
+            </a></li>
+            <li><a href="#">
+              <button class="About-button">About</button>
+            </a></li>
+            <li><a href="#">
+              <button class="Support-button">Support</button>
+            </a></li>
+            <li><a href="#">
+              <button class="Terms-button">Terms</button>
+            </a></li>
+            <li><a href="#">
+              <button class="Privacy-button">Privacy</button>
+            </a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+<router-outlet></router-outlet>

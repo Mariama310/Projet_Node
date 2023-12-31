@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <title> Anki Web</title>
+  <link rel="stylesheet" href="add.component.css">
+</head>
+
+<body>
+<div class = "main">
+  <div class ="navbar">
+    <div class="icon">
+      <h2 class ="logo">AnkiWeb</h2>
+      <img src="logo.png" alt="" class="logo">
+    </div>
+    <nav>
+      <div class="auth-buttons">
+        <ul>
+
+          <li><a href="#">
+            <button class="Account-button">Account</button>
+          </a></li>
+          <li><a href="#">
+            <button class="LogOut-button">Log Out</button>
+          </a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class ="Type">
+    <label id="type">Type</label>
+    <select name="type" id="type">
+      <option value="Basic">Basic</option>
+      <option value="Basic (and reversed card)">Basic (and reversed card)</option>
+      <option value="Basic (optional reversed card)">Basic (optional reversed card)</option>
+      <option value="Basic (type in the answer)">Basic (type in the answer)</option>
+      <option value="Cloze">Cloze</option>
+      <option value="Image Occlusion">Image Occlusion</option>
+
+    </select>
+  </div>
+  <div class ="Deck">
+    <label id="deck">Deck</label>
+    <select name="Deck" id="deck">
+      <option value="Default">Default</option>
+      <option value="Voiture">Voiture</option>
+
+    </select>
+  </div>
+  <div class="Front">
+    <label id="front">Front</label>
+    <textarea name="Front" id="Front" ></textarea>
+  </div>
+  <div class="Back">
+    <label id="back">Back</label>
+    <textarea name="Back" id="back" ></textarea>
+  </div>
+  <div class="Tags">
+    <label id="tags">Tags</label>
+    <textarea name="Tags" id="tags" ></textarea>
+  </div>
+  <div class="Add-button">
+    <button>Add</button>
+  </div>
+  <div class ="navbar-2">
+    <div class="bottom">
+      <nav>
+        <div class="info-button">
+          <ul>
+            <li><a href="#">
+              <button class="Apps-button">Apps</button>
+            </a></li>
+            <li><a href="#">
+              <button class="About-button">About</button>
+            </a></li>
+            <li><a href="#">
+              <button class="Support-button">Support</button>
+            </a></li>
+            <li><a href="#">
+              <button class="Terms-button">Terms</button>
+            </a></li>
+            <li><a href="#">
+              <button class="Privacy-button">Privacy</button>
+            </a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+<router-outlet></router-outlet>

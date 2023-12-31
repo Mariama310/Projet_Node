@@ -1,0 +1,345 @@
+/* src/app/menu-nav-bar/menu-nav-bar.component.css */
+
+
+*{
+  margin:0;
+  padding: 0;
+}
+.main{
+  width: 100%;
+  background-size: cover;
+  height: 109vh;
+}
+
+.navbar{
+  width:1200px ;
+  height: 75px;
+  margin: auto;
+
+}
+.icon{
+  width: 200px;
+  float: left;
+  height: 70px;
+}
+
+.logo{
+  color: cornflowerblue;
+  font-size: 35px;
+
+}
+.auth-buttons{
+  width: 500px;
+  float: right;
+  height: 100px;
+
+}
+ul{
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul li{
+  list-style : none;
+  margin-left: 62px;
+  margin-top: 27px;
+  font-size: 14px;
+}
+
+ul li a{
+  text-decoration: #007bff;
+  color: white;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+  text-decoration: #007bff;
+  color: orange;
+}
+h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.auth-buttons {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.Account-button,
+.LogOut-button {
+  padding: 10px 15px;
+  font-size: 1em;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+
+
+.Account-button:hover,
+.LogOut-button {
+  background-color: #0056b3;
+}
+
+
+.navbar-3{
+  width:600px ;
+  height: 75px;
+  margin-left: 300px;
+  margin-top: 50px;
+}
+
+.navbar-2{
+  width:600px ;
+  height: 75px;
+  margin-left: 350px;
+  margin-top: 50px;
+}
+.Decks-button,
+.Add-button,
+.Search-button{
+  padding: 10px 15px;
+  font-size: 1em;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.Account-button{
+  margin-left: 450px;
+}
+
+
+
+.Gestion-buttons{
+  color: bisque;
+}
+
+.info-button{
+  color: bisque;
+}
+
+
+
+.Apps-button:hover {
+  background-color: bisque;
+}
+.About-button:hover {
+  background-color: bisque;
+}
+.Support-button:hover {
+  background-color: bisque;
+}
+.Terms-button:hover {
+  background-color: bisque;
+}
+.Privacy-button:hover {
+  background-color: bisque;
+}
+.Terms-button,
+.Apps-button,
+.About-button,
+.Support-button,
+.Privacy-button {
+  padding: 5px 13px;
+  font-size: 1em;
+  text-decoration: none;
+  color: #fff;
+  background-color: grey;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  margin-top: 300px;
+}
+
+
+.Type{
+  display: flex;
+  margin-top: 40px;
+  margin-left: 20px;
+  align-items: center;
+
+
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+select {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-left: 50px;
+}
+
+/* Style pour les options du sélecteur */
+select option {
+  background-color: #fff; /* Couleur de fond des options */
+  color: #333; /* Couleur du texte des options */
+}
+
+select option:hover {
+  background-color: #f0f0f0; /* Couleur de fond au survol */
+}
+
+.Deck{
+  display: flex;
+  margin-top: 40px;
+  margin-left: 20px;
+  align-items: center;
+
+
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+select {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-left: 50px;
+}
+
+/* Style pour les options du sélecteur */
+select option {
+  background-color: #fff; /* Couleur de fond des options */
+  color: #333; /* Couleur du texte des options */
+}
+
+select option:hover {
+  background-color: #f0f0f0; /* Couleur de fond au survol */
+}
+
+
+.Front{
+  display: flex;
+  margin-top: 40px;
+  margin-left: 20px;
+  align-items: center;
+
+
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+textarea{
+  width: 48%
+;
+  padding: 9px
+;
+  font-size: 16px
+;
+  border: 1px solid #ddd
+;
+  border-radius: 4px
+;
+  margin-left: 50px
+;
+}
+
+.Back{
+  display: flex;
+  margin-top: 40px;
+  margin-left: 20px;
+  align-items: center;
+
+
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+textarea{
+  width: 48%
+;
+  padding: 9px
+;
+  font-size: 16px
+;
+  border: 1px solid #ddd
+;
+  border-radius: 4px
+;
+  margin-left: 50px
+;
+}
+
+.Tags{
+  display: flex;
+  margin-top: 40px;
+  margin-left: 20px;
+  align-items: center;
+
+
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+textarea{
+  width: 48%
+;
+  padding: 9px
+;
+  font-size: 16px
+;
+  border: 1px solid #ddd
+;
+  border-radius: 4px
+;
+  margin-left: 50px
+;
+}
+
+
+.Add-button{
+  width: fit-content;
+  padding: 10px 15px;
+  font-size: 1em;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,222 @@
+.btn1{
+  font-size: 1em;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  opacity: 0.7;
+}
+
+.btn1 {
+  background-color: #007bff; /* Use a different color for the Sign Up button */
+}
+
+.btn1:hover{
+  background-color: #0056b3;
+}
+
+.mb-3 {
+  margin-bottom: 1rem!important;
+}
+
+input[type=text].svelte-1ak1s42, input[type=password].svelte-1ak1s42 {
+  font-size: 16px;
+}
+.form-floating>.form-control, .form-floating>.form-control-plaintext {
+  padding: 1rem 0.75rem;
+}
+.form-floating>.form-control, .form-floating>.form-control-plaintext, .form-floating>.form-select {
+  line-height: 1.25;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-clip: padding-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+
+.mb-3 {
+  margin-bottom: 1rem!important;
+}
+.form-floating {
+  position: relative;
+}
+.form-control {
+  border: 1px solid #d3d3d3; /* Light gray border */
+  /* Other styling properties for form-control */
+}
+.home-container {
+  text-align: center;
+  margin-top: 50px;
+  line-height: 1.6;
+}
+.home-container p{
+  margin-bottom: 15px;
+  color: black;
+  font-size: 16px;
+}
+*{
+  margin:0;
+  padding: 0;
+}
+.main{
+  width: 100%;
+  background-size: cover;
+  height: 109vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color:#E6E6FA; /* Dark background for the navbar */
+  color: white;
+}
+
+/* Style for the logo and icon container */
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the logo text */
+.logo {
+  margin-right: 10px;
+  font-size: 35px;
+  color: cornflowerblue; /* White color for the logo text */
+}
+
+/* Style for the logo image */
+.logo img {
+  width: 25px; /* Adjust the size as needed */
+  height: auto;
+}
+
+.auth-buttons{
+  width: 500px;
+  float: right;
+  height: 100px;
+
+}
+ul{
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul li{
+  list-style : none;
+  margin-left: 62px;
+  margin-top: 27px;
+  font-size: 14px;
+}
+
+ul li a{
+  text-decoration: #007bff;
+  color: white;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+  text-decoration: #007bff;
+  color: orange;
+}
+h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+small {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.auth-buttons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.login-button,
+.signup-button {
+  padding: 10px 15px;
+  font-size: 1em;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.signup-button {
+  background-color: #28a745; /* Use a different color for the Sign Up button */
+}
+
+.login-button:hover,
+.signup-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+.container.svelte-uhvvkf.svelte-uhvvkf {
+  max-width: 1140px;
+}
+
+main.svelte-uhvvkf.svelte-uhvvkf {
+  min-height: 75vh;
+  margin-bottom: 1rem;
+}
+.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x)*.5);
+  padding-left: calc(var(--bs-gutter-x)*.5);
+  margin-right: auto;
+  margin-left: auto;
+}

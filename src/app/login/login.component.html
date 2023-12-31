@@ -1,0 +1,49 @@
+<!-- src/app/home/home.component.html -->
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <title> Anki Web</title>
+  <link rel="stylesheet" href="login.component.css">
+</head>
+
+<body>
+<div class = "main">
+  <div class ="navbar">
+    <div class="icon">
+      <h2 class ="logo">AnkiWeb</h2>
+      <img src="logo.png" alt="" class="logo">
+    </div>
+    <nav>
+      <div class="auth-buttons">
+        <ul>
+          <li><a href="#">
+            <button class="login-button">Sign up</button>
+          </a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <main class="container svelte-uhvvkf">
+    <h1> Login</h1>
+    <p> Log in to an existing account.</p>
+    <form>
+      <div class="form-floating mb-3 form-control">
+        <input class="form-control svelte-1ak1s42" type="text" autocomplete="username" autofocus="" maxlength="1000" id="GlReZmt-jnW847kZ87-8m" placeholder="Email">
+      </div>
+      <div class="form-floating mb-3 form-control">
+        <input class="form-control svelte-1ak1s42" type="password" autocomplete="new-password" id="5rhTozHVztdZ-0pODxGLU" placeholder="Password">
+      </div>
+      <div class="mb-3">
+        <button class="btn1" disabled="">Log In</button>
+      </div>
+      <div class="mt-2 form-group">
+        <button (click)="onresetpasswordclick()">reset-password</button>
+      </div>
+    </form>
+  </main>
+</div>
+</body>
+</html>
+
+
