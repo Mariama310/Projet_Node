@@ -1,4 +1,9 @@
+>[!IMPORTANT]
 
+In the github there is only one commit but each member (Joalie-Mariama-Alexia) participated in the project (frontend) equally, we just had a few small problems with the /n github, that's why that there was only one commit.
+The backend part will arrive a little late following a problem encountered at the last minute because Margaux had a problem with her computer and the SEQUELIZE module and the database.
+Run the web page:
+You must launch the application with the “run” in webstorm
 # NodeProject
 
 ## Project Overview
