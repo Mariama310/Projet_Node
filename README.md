@@ -65,7 +65,6 @@ Our Web Application is similar to Anki, here is a description of the pages :
 ### Account settings
 ![image](https://github.com/Mariama310/Node_projet/assets/144097792/64db38a6-99d7-4ffc-aa66-55f25bf85658)
 
-### Other Pages
 
 
 
