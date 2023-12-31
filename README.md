@@ -65,6 +65,13 @@ Our Web Application is similar to Anki, here is a description of the pages :
 ### Account settings
 ![image](https://github.com/Mariama310/Node_projet/assets/144097792/64db38a6-99d7-4ffc-aa66-55f25bf85658)
 
+### Deck
+![WhatsApp Image 2023-12-31 à 18 52 20_0f299930](https://github.com/Mariama310/Projet_Node/assets/144097792/ad05faf9-9035-40a0-86e0-89f583b0930b)
+
+
+### Search decks
+![WhatsApp Image 2023-12-31 à 18 52 35_29be5647](https://github.com/Mariama310/Projet_Node/assets/144097792/57c05571-ba7e-45b1-a7bd-d8c9cd1789fc)
+
 
 
 
