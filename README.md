@@ -83,6 +83,8 @@ For more on Angular CLI, use `ng help` or visit the [Angular CLI Overview and Co
 
 ## License
 This project is a work of CORNELIE Joalie, DELAFOSSE Margaux, IGUE Alexia, BOUSSO KANE Sokhna Mariama.
+<span style="color:red;">Due to technical problems and the beginner level of knowledge we have about GitHub, we had to create a final Repository and commit the final code we all have worked on.</span>
+
 
 ## Acknowledgments
 Link of the original website : [Anki](https://ankiweb.net/account/signup)
