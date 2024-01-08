@@ -8,32 +8,7 @@
 
 <body>
 <div class = "main">
-  <div class ="navbar">
-    <div class="icon">
-      <h2 class ="logo">AnkiWeb</h2>
-      <img src="logo.png" alt="" class="logo">
-    </div>
-    <nav>
-      <div class="auth-buttons">
-        <ul>
-          <li><a class="nav-link" [routerLink]="['/deck']">
-            <button class="Decks-button">Decks</button>
-          </a></li>
-          <li><a class="nav-link" [routerLink]="['/add']">
-            <button class="Add-button">Add</button>
-          </a></li>
-          <li><button class="Search-button" [routerLink]="['/search']" >Search</button></li>
-          <li><a href="/account">
-            <button class="Account-button" [routerLink]="['/account']">Account</button>
-          </a></li>
-          <li><a href="#">
-            <button class="LogOut-button">Log Out</button>
-          </a></li>
-
-        </ul>
-      </div>
-    </nav>
-  </div>
+  <app-nav-bar/>
 
   <div class="CollectionMedia">
     <p>Collection: 0.13MB     Media: <10kB</p>

@@ -30,21 +30,32 @@
   <main class="container svelte-uhvvkf">
     <h1> Sign Up</h1>
     <p> Create a free account in under a minute.</p>
-    <p> We'll sen you an email to confirm your address, so please
+    <p> We'll send you an email to confirm your address, so please
       ensure your email is correct.
     </p>
-    <form>
-      <div class="form-floating mb-3 form-control">
-        <input class="form-control svelte-1ak1s42" type="text" autocomplete="username" autofocus="" maxlength="1000" id="GlReZmt-jnW847kZ87-8m" placeholder="Email">
-      </div>
-      <div class="form-floating mb-3 form-control">
-        <input class="form-control svelte-1ak1s42" type="password" autocomplete="new-password" id="5rhTozHVztdZ-0pODxGLU" placeholder="New Password">
-      </div>
-      <div class="mb-3">
-        <button class="btn1" disabled="">Sign Up</button>
-      </div>
-      <small>Your email is used as your username on AnkiWeb, and for communication relating
-        to the service, such as when you reset your password.</small>
+    <form (ngSubmit)="onSignUpClick()">
+      <label igxLabel for="firstName" class="label">First Name</label>
+      <igx-input-group>
+        <input igxInput id="firstName" name="firstName" [(ngModel)]="firstName" [required]="true"/>
+      </igx-input-group>
+      <label igxLabel for="lastName" class="label">Last Name</label>
+      <igx-input-group>
+        <input igxInput id="lastName" name="lastName" [(ngModel)]="lastName" [required]="true"/>
+      </igx-input-group>
+      <label igxLabel for="age" class="label">Age</label>
+      <igx-input-group>
+        <input igxInput id="age" name="age" [(ngModel)]="age" [required]="true"/>
+      </igx-input-group>
+      <label igxLabel for="email" class="label">Email</label>
+      <igx-input-group>
+        <input igxInput id="email" name="email" [(ngModel)]="email" [required]="true"/>
+      </igx-input-group>
+      <label igxLabel for="password" class="label">Password</label>
+      <igx-input-group>
+        <input igxInput id="password" name="password" [(ngModel)]="password" [required]="true"/>
+      </igx-input-group>
+      <button igxButton>Sign Up</button>
+
     </form>
   </main>
 

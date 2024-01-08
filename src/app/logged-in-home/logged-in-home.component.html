@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <title> Anki Web</title>
+  <link rel="stylesheet" href="logged-in-home.component.css">
+</head>
+
+<body>
+<section class="main">
+  <div>
+    <ng-container>
+      <h2 id="title-logged-in">Welcome {{firstName}} ! </h2>
+    </ng-container>
+  </div>
+</section>
+<section class="content">
+  <igx-buttongroup>
+    <button (buttonClick)="onClickDecks()" igxButton>Your Decks</button>
+    <button igxButton>Your account</button>
+  </igx-buttongroup>
+</section>
+</body>

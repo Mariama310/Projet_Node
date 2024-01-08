@@ -11,7 +11,7 @@
   <div class ="navbar">
     <div class="icon">
       <h2 class ="logo">AnkiWeb</h2>
-      <img src="logo.png" alt="" class="logo">
+      <img ngSrc="logo.png" alt="" class="logo">
     </div>
     <nav>
       <div class="auth-buttons">
@@ -27,16 +27,19 @@
   <main class="container svelte-uhvvkf">
     <h1> Login</h1>
     <p> Log in to an existing account.</p>
-    <form>
-      <div class="form-floating mb-3 form-control">
-        <input class="form-control svelte-1ak1s42" type="text" autocomplete="username" autofocus="" maxlength="1000" id="GlReZmt-jnW847kZ87-8m" placeholder="Email">
-      </div>
-      <div class="form-floating mb-3 form-control">
-        <input class="form-control svelte-1ak1s42" type="password" autocomplete="new-password" id="5rhTozHVztdZ-0pODxGLU" placeholder="Password">
-      </div>
-      <div class="mb-3">
-        <button class="btn1" disabled="">Log In</button>
-      </div>
+    <form (ngSubmit)="onLoginClick()">
+      <label igxLabel for="email"> Email</label>
+      <igx-input-group>
+        <input igxInput id="email" name="email" type="text" [(ngModel)]="email" [required]="true"/>
+      </igx-input-group>
+
+      <label for="password">Password</label>
+      <igx-input-group>
+        <input igxInput [type]="password" id="password" name="password" [(ngModel)]="password"/>
+      </igx-input-group>
+
+      <button>Login </button>
+
       <div class="mt-2 form-group">
         <button (click)="onresetpasswordclick()">reset-password</button>
       </div>

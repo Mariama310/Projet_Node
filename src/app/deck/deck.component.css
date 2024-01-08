@@ -1,0 +1,37 @@
+.centered-carousel{
+  justify-content:center;
+  align-items:center;
+  height: auto;
+}
+
+.centered-carousel .igx-carousel {
+  max-width: 800px;
+  width:100%;
+}
+
+.centered-carousel .igx-slide {
+  background-color: #f0f0f0;
+  border: 1px solid #dddddd;
+  padding: 10px;
+  border-radius: 2px;
+  height:auto;
+  flex-direction: column;
+  align-content: center;
+  width:100%;
+  align-items: center;
+}
+
+.button-delete{
+  margin-bottom:10px;
+  align-content: center;
+}
+
+.general {
+  display:flex;
+  align-items: center;
+  flex-direction:column;
+}
+
+.div-add {
+  margin-top:20px;
+}

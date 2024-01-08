@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <title> Anki Web</title>
+  <link rel="stylesheet" href="card.component.css">
+</head>
+
+<body>
+<section class="main">
+  <div>
+    <igx-card class="card">
+      <p>Recto : {{recto}}</p>
+      <p>Verso: {{verso}}</p>
+      <p>Status : {{state}}</p>
+      <button igxButton class="button-delete" (buttonClick)="onClickDelete(cardId)">Delete this card</button>
+    </igx-card>
+  </div>
+</section>
+</body>

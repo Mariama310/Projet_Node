@@ -1,0 +1,35 @@
+.img-trash{
+  max-width: 100%;
+  max-height: 100%;
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.igx-list-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 8px;
+  border: none;
+  width: 300px;
+}
+.delete-icon {
+  cursor:pointer;
+  border:none;
+
+}
+
+.igx-list{
+  display: block;
+  flex-direction: column;
+  width:400px;
+  justify-content: center;
+}
+
+.p-name {
+  width:90%;
+  margin-right:50px;
+
+}

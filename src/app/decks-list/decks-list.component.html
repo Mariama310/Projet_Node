@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <title> Anki Web</title>
+  <link rel="stylesheet" href="decks-list.component.css">
+</head>
+
+<body>
+<section class="main">
+  <app-nav-bar/>
+  <div>
+    <h2>Your decks</h2>
+    <div class="centered-carousel">
+      <igx-list class='igx-list' *ngFor="let deck of decks">
+        <igx-list-item class="igx-list-item" [routerLink]="['/decks',deck.id]">
+          <p class="p-name">{{ deck.deckName }}</p>
+          <button (click)="onClickDelete($event,deck.id)"><mat-icon class="delete-icon">delete</mat-icon> </button>
+        </igx-list-item>
+
+      </igx-list>
+    </div>
+    <app-add-deck></app-add-deck>
+    <ng-template #noCardsMessage>
+      <p>there are no cards in the deck</p>
+    </ng-template>
+  </div>
+</section>
+</body>
+

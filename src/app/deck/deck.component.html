@@ -1,1 +1,33 @@
-<p>deck works!</p>
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <title> Anki Web</title>
+  <link rel="stylesheet" href="deck.component.css">
+</head>
+
+<body>
+
+<section class="main">
+  <app-nav-bar></app-nav-bar>
+  <div class="general">
+    <h2>{{ deckName }}</h2>
+    <div class="centered-carousel">
+      <igx-carousel *ngIf="cards.length > 0; else noCardsMessage">
+        <igx-slide class="centered-carousel igx-slide" *ngFor="let card of cards">
+          <app-card [recto]="card.recto" [verso]="card.verso" [state]="card.state" [cardId]="card.id" ></app-card>
+
+        </igx-slide>
+
+      </igx-carousel>
+    </div>
+    <div class="div-add">
+      <app-add-card [deckId]="id" [deckName]="deckName"></app-add-card>
+
+    </div>
+    <ng-template #noCardsMessage>
+      <p>there are no cards in the deck</p>
+    </ng-template>
+  </div>
+</section>
+</body>
+

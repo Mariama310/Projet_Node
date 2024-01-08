@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <title> Anki Web</title>
+  <link rel="stylesheet" href="add-deck.component.css">
+</head>
+<body>
+<button igxButton="contained" igxRipple="white" (click)="dialog1.open()">Add A Deck</button>
+
+<igx-dialog #dialog1 [closeOnOutsideSelect]="true">
+
+  <div>Create a new deck</div>
+
+  <form (ngSubmit)="onClickAddDeck()">
+    <label igxLabel for="deckName">Deck Name</label>
+    <igx-input-group>
+      <input igxInput id="deckName" name="deckName" [(ngModel)]="deckName"/>
+    </igx-input-group>
+
+
+    <button>Add this deck</button>
+  </form>
+
+
+
+  <div igxDialogActions>
+    <button igxButton (click)="dialog1.close()">CLOSE</button>
+  </div>
+</igx-dialog>
+</body>

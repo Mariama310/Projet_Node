@@ -10,18 +10,26 @@ import {AccountComponent} from "./account/account.component";
 import{HomeComponent} from "./home/home.component";
 import{ MenuNavBarComponent} from "./menu-nav-bar/menu-nav-bar.component";
 import{ResetPasswordComponent} from "./reset-password/reset-password.component";
+import {LoggedInHomeComponent} from "./logged-in-home/logged-in-home.component";
+import {DecksListComponent} from "./decks-list/decks-list.component";
+import {AddCardComponent} from "./add-card/add-card.component";
+import {AddDeckComponent} from "./add-deck/add-deck.component";
 
 const routes: Routes = [
   {path:'', redirectTo :'/home', pathMatch:'full'},
   {path: 'menu-nav-bar', component:MenuNavBarComponent},
   {path: 'search', component: SearchComponent},
   {path: 'add', component: AddComponent},
-  {path: 'deck', component: DeckComponent},
+  {path:'decks',component:DecksListComponent},
+  {path:'decks/new',component:AddDeckComponent},
+  {path: 'decks/:id', component: DeckComponent},
+  {path:'cards/new',component:AddCardComponent},
   {path: 'account', component: AccountComponent},
   {path:'login', component: LoginComponent},
   {path: 'home', component: HomeComponent},
   {path:'signup', component: SignupComponent},
-  {path:'reset-password', component: ResetPasswordComponent}
+  {path:'reset-password', component: ResetPasswordComponent},
+  {path:'welcome',component:LoggedInHomeComponent}
 ];
 
 @NgModule({
