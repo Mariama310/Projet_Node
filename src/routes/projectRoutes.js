@@ -1,0 +1,20 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const userpersistence_1 = require("../persistence/userpersistence");
+const cardPersistence_1 = require("../persistence/cardPersistence");
+const deckPersistence_1 = require("../persistence/deckPersistence");
+const router = express_1.default.Router();
+router.post('/users', userpersistence_1.userPersistence.NewUser);
+router.delete('/users/:userId', userpersistence_1.userPersistence.deleteUser);
+router.get("/users/login/:userEmail", userpersistence_1.userPersistence.findUser);
+router.post("/cards", cardPersistence_1.cardPersistence.NewCard);
+router.get('/cards/get/:deckId', cardPersistence_1.cardPersistence.findAllCards);
+router.delete('/cards/delete/:cardId', cardPersistence_1.cardPersistence.deleteCard);
+router.post("/decks", deckPersistence_1.deckPersistence.NewDeck);
+router.get('/decks/get/:userId', deckPersistence_1.deckPersistence.findAllDecks);
+router.delete('/decks/delete/:deckId', deckPersistence_1.deckPersistence.deleteDeck);
+exports.default = router;
