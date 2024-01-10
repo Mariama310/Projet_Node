@@ -17,12 +17,15 @@
   width: 100%;
   background-size: cover;
   height: 109vh;
+  align-items: center;
+  display:flex;
+  flex-direction:column;
 }
 
 .navbar{
   width:1200px ;
   height: 75px;
-  margin: auto;
+  margin-top:0px;
 
 }
 .icon{
@@ -107,7 +110,6 @@ p {
 .navbar-2{
   width:600px ;
   height: 75px;
-  margin-left: 350px;
   margin-top: 150px;
 }
 
