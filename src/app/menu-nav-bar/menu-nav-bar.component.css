@@ -9,12 +9,14 @@
   width: 100%;
   background-size: cover;
   height: 109vh;
+  align-items: center;
 }
 
 .navbar{
   width:1200px ;
   height: 75px;
   margin: auto;
+  align-items: center;
 
 }
 .icon{
@@ -97,8 +99,8 @@ p {
 .navbar-2{
   width:600px ;
   height: 75px;
-  margin-left: 350px;
   margin-top: 50px;
+  align-items:center;
 }
 .navbar-3{
   width:600px ;
