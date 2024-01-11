@@ -36,6 +36,8 @@ import { AddCardComponent } from './add-card/add-card.component';
 import { AddDeckComponent } from './add-deck/add-deck.component';
 import {MatIconModule} from "@angular/material/icon";
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { CardReviewComponent } from './card-review/card-review.component';
+import { DeckReviewComponent } from './deck-review/deck-review.component';
 
 @NgModule({
   bootstrap: [AppComponent],
@@ -57,6 +59,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     AddCardComponent,
     AddDeckComponent,
     NavBarComponent,
+    CardReviewComponent,
+    DeckReviewComponent,
   ],
   imports: [
     BrowserModule,

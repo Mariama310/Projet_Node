@@ -15,6 +15,7 @@
         <igx-list-item class="igx-list-item" [routerLink]="['/decks',deck.id]">
           <p class="p-name">{{ deck.deckName }}</p>
           <button (click)="onClickDelete($event,deck.id)"><mat-icon class="delete-icon">delete</mat-icon> </button>
+          <button class="review" (click)="onclickReview($event,deck.id)">Review this deck</button>
         </igx-list-item>
 
       </igx-list>

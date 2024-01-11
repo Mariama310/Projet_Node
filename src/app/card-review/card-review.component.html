@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <title> Anki Web</title>
+  <link rel="stylesheet" href="card-review.component.css">
+</head>
+
+<body>
+<section>
+
+  <igx-card>
+    <div>
+      <p>{{recto}}</p>
+    </div>
+
+    <div *ngIf="this.isAnswerVisible">
+      <p>{{verso}}</p>
+    </div>
+    <div *ngIf="!this.isAnswerVisible">
+      <p>Hidden</p>
+      <button igxButton (click)="showAnswer()">Show Answer</button>
+    </div>
+
+  </igx-card>
+
+</section>
+</body>

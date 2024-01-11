@@ -59,6 +59,11 @@ export class DecksListComponent {
 
     }
 
+    onclickReview(event:Event,deckId:number){
+      event.stopPropagation()
+      this.router.navigateByUrl(`decks/review/${deckId}`);
+    }
+
 
 
 

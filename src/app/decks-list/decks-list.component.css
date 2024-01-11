@@ -9,11 +9,10 @@
 
 .igx-list-item {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
   padding: 8px;
   border: none;
-  width: 300px;
+  width: 100%;
 }
 .delete-icon {
   cursor:pointer;
@@ -24,7 +23,7 @@
 .igx-list{
   display: block;
   flex-direction: column;
-  width:400px;
+  width:600px;
   justify-content: center;
 }
 
@@ -32,4 +31,13 @@
   width:90%;
   margin-right:50px;
 
+}
+
+.review{
+  width: fit-content;
+  display:flex;
+  justify-content: flex-end;
+  white-space: nowrap;
+  height:auto;
+  margin-left:5px;
 }
