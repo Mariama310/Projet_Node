@@ -6,9 +6,8 @@
 </head>
 
 <body>
-<section>
-
-  <igx-card>
+<section class="section-main">
+  <igx-card class="igx-card">
     <div>
       <p>{{recto}}</p>
     </div>
@@ -17,7 +16,7 @@
       <p>{{verso}}</p>
     </div>
     <div *ngIf="!this.isAnswerVisible">
-      <p>Hidden</p>
+      <p class="p-hidden">Hidden</p>
       <button igxButton (click)="showAnswer()">Show Answer</button>
     </div>
 

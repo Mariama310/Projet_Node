@@ -5,10 +5,11 @@
   <link rel="stylesheet" href="deck-review.component.css">
 </head>
 <body>
-<div>
+<div class="div-main">
+  <app-nav-bar></app-nav-bar>
   <div >
       <app-card-review [recto]="cards[this.currentIndex].recto" [verso]="cards[this.currentIndex].verso" [cardId]="cards[this.currentIndex].id"></app-card-review>
   </div>
-  <button igxButton (click)="onClickNextCard()">Next Card</button>
+  <button igxButton class="button-next-card" (click)="onClickNextCard()">Next Card</button>
 </div>
 </body>

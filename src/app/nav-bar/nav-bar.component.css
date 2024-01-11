@@ -26,6 +26,7 @@
 .logo{
   color: cornflowerblue;
   font-size: 35px;
+  margin-right:50px;
 
 }
 .auth-buttons{
@@ -92,6 +93,7 @@ p {
 .Account-button:hover,
 .LogOut-button {
   background-color: #0056b3;
+  white-space:nowrap;
 }
 
 .navbar-2{

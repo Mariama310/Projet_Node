@@ -1,0 +1,8 @@
+.div-main{
+  display:flex;
+  flex-direction: column;
+}
+
+.button-next-card{
+  margin-top:30px;
+}
