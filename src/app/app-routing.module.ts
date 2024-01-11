@@ -14,6 +14,8 @@ import {LoggedInHomeComponent} from "./logged-in-home/logged-in-home.component";
 import {DecksListComponent} from "./decks-list/decks-list.component";
 import {AddCardComponent} from "./add-card/add-card.component";
 import {AddDeckComponent} from "./add-deck/add-deck.component";
+import {CardReviewComponent} from "./card-review/card-review.component";
+import {DeckReviewComponent} from "./deck-review/deck-review.component";
 
 const routes: Routes = [
   {path:'', redirectTo :'/home', pathMatch:'full'},
@@ -23,7 +25,9 @@ const routes: Routes = [
   {path:'decks',component:DecksListComponent},
   {path:'decks/new',component:AddDeckComponent},
   {path: 'decks/:id', component: DeckComponent},
+  {path:'decks/review/:id',component:DeckReviewComponent},
   {path:'cards/new',component:AddCardComponent},
+  {path:'cards/review',component:CardReviewComponent},
   {path: 'account', component: AccountComponent},
   {path:'login', component: LoginComponent},
   {path: 'home', component: HomeComponent},
